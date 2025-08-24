@@ -9,6 +9,7 @@ RUN apt-get update && \
     && rm -rf /var/lib/apt/lists/*
 
 # Install Google Gemini CLI
+RUN curl -fsSL https://deb.nodesource.com/setup_24.x | sudo -E bash -
 RUN npm install -g @google/gemini-cli
 
 # Install rust
