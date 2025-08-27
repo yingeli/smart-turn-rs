@@ -4,8 +4,6 @@ FROM huggingface/transformers-pytorch-gpu:latest
 RUN apt-get update && \
     apt-get install --yes --no-install-recommends --no-install-suggests \
     sudo \
-    nodejs \
-    npm \
     && rm -rf /var/lib/apt/lists/*
 
 # Install Google Gemini CLI
