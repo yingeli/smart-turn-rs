@@ -13,6 +13,7 @@ RUN curl -fsSL https://deb.nodesource.com/setup_24.x | sudo -E bash - \
     && apt-get install --yes --no-install-recommends --no-install-suggests \
     nodejs \
     npm \
+    && rm -rf /var/lib/apt/lists/* \
     && npm install -g @google/gemini-cli
 
 # Install rust
