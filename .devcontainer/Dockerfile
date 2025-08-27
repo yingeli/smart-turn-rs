@@ -1,4 +1,4 @@
-FROM nvcr.io/nvidia/tensorrt:25.08-py3
+FROM docker pull huggingface/optimum-onnxruntime:latest-cuda
 
 # Install baseline packages
 RUN apt-get update && \
