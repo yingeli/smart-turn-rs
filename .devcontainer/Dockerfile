@@ -1,4 +1,4 @@
-FROM huggingface/optimum-onnxruntime:latest-cuda
+FROM huggingface/transformers-pytorch-gpu:latest
 
 # Install baseline packages
 RUN apt-get update && \

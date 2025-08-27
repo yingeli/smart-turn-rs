@@ -96,10 +96,11 @@ class _Wav2Vec2ForEndpointing(Wav2Vec2PreTrainedModel):
         probs = torch.sigmoid(logits)
         return {"logits": probs}
 
-model = _Wav2Vec2ForEndpointing.from_pretrained("pipecat-ai/smart-turn-v2", device_map="cuda")
+model = _Wav2Vec2ForEndpointing.from_pretrained("pipecat-ai/smart-turn-v2")
+model.to("cuda")
 processor = Wav2Vec2Processor.from_pretrained("pipecat-ai/smart-turn-v2")
 
-speech, sr = sf.read("../smart-turn-rs/models/audio1.wav")
+speech, sr = sf.read("audio1.wav")
 if sr != 16_000:
     raise ValueError("Resample to 16 kHz")
 
