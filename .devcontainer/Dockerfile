@@ -1,4 +1,4 @@
-FROM docker pull huggingface/optimum-onnxruntime:latest-cuda
+FROM huggingface/optimum-onnxruntime:latest-cuda
 
 # Install baseline packages
 RUN apt-get update && \
