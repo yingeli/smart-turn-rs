@@ -1,4 +1,4 @@
-FROM huggingface/transformers-pytorch-gpu:latest
+FROM huggingface/transformers-all-latest-gpu:latest
 
 # Install baseline packages
 RUN apt-get update && \
