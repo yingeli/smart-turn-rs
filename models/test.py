@@ -1,4 +1,5 @@
 from transformers import Wav2Vec2Config, Wav2Vec2Model, Wav2Vec2PreTrainedModel, Wav2Vec2Processor
+#from optimum.onnxruntime import Wav2Vec2Config, Wav2Vec2Model, Wav2Vec2PreTrainedModel, Wav2Vec2Processor
 import soundfile as sf
 import torch
 from torch import nn
